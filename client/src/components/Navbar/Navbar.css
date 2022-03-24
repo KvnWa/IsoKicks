@@ -1,5 +1,16 @@
-.Navbar {
+.navbar {
     display: flex;
     text-align: center;
     justify-content: space-between;
+    border-bottom: 1px solid;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.leftside {
+    
+}
+
+.rightside {
+    justify-content: space-around;
 }
