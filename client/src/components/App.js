@@ -9,7 +9,7 @@ import Cart from './Cart/Cart.jsx'
 const App = () => {
   return (
     <Router>
-    <div className="flex w-full content-center justify-center">
+    <div>
       <Route exact path="/">
       <Navbar />
       </Route>
@@ -17,9 +17,6 @@ const App = () => {
       <Cart />
       </Route>
       <Login />
-    <h1 className="text-3xl font-bold underline">
-      Hello world! this is a test
-    </h1>
     </div>
     </Router>
   )
