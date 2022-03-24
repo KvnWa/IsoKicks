@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.account-nav {
+    display: grid;
+    border-bottom: 1px solid #e5e5e5;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 1px;
+}
+
+.customer-account {
+    
+    width: 100%;
+    justify-content: center;
+}
+
+.customer-account-title {
+    font-size: 1.0625rem;
+    margin-bottom: 27px;
+}
