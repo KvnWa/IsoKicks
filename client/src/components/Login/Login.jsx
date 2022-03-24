@@ -16,17 +16,20 @@ const Login = () => {
             <div className="account-container">
                 <ul className="account-nav">
                     <li>
-                      <a href="" className="signin">Sign In</a>  
+                      <a href="" className="signin">SIGN IN</a>  
                     </li>
                     <li>
-                        <a href="" className="create">Create Account</a>
+                        <a href="" className="create">CREATE ACCOUNT</a>
                     </li>
                 </ul>
                 <div className="customer-account">
                     <h3 className="customer-account-title"> My Account</h3>
                     <form>
-                        <input></input>
-                        <input></input>
+                       <div className="form-group">
+                          <label>Email Address</label>
+                          <label>Password</label>
+
+                       </div>
                     </form>
                 </div>
 
