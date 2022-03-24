@@ -27,9 +27,11 @@ const Login = () => {
                     <form>
                        <div className="form-group">
                           <label>Email Address</label>
+                          <input className="form-control" name="customer[email]" type="text" autoCapitalize='off'></input>
                           <label>Password</label>
-
+                          <input className="form-control" name="customer[password]" type="password" autoCapitalize='off'></input>
                        </div>
+                       <input type="submit" className="btn-submit" value="SIGN IN"></input>
                     </form>
                 </div>
 
