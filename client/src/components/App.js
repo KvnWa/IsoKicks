@@ -1,6 +1,6 @@
 import './App.css'
 import React from 'react'
-import Navbar from './Navbar.tsx'
+import Navbar from './navbar/Navbar.tsx'
 
 const App = () => {
   return (
