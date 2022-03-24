@@ -3,14 +3,27 @@
     text-align: center;
     justify-content: space-between;
     border-bottom: 1px solid;
-    padding-top: 10px;
-    padding-bottom: 5px;
+   
 }
 
-.leftside {
-    
+.leftside1 {
+    margin-left: 10px;
 }
 
-.rightside {
-    justify-content: space-around;
+.leftside2 {
+    margin-left: 2.4rem; 
 }
+
+.logo {
+    margin: 0 auto;
+}
+
+.rightside1 {
+    margin-right: 2.4rem;
+ 
+}
+
+.rightside2 {
+    margin-right: 10px;
+}
+

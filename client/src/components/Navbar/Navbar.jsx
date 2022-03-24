@@ -11,19 +11,23 @@ const Navbar = () => {
     return (
         <nav>
             <div className="navbar">
-                <span className="leftside">
+                <span className="leftside1">
                     <img src={search}></img>
                 </span>
-                <span>
+                <span className="leftside2">
                     <img src={fav}></img>
                 </span>
+                <span className="logo">
+                <Link to='/'>
                 <h1 className="navbar-logo">Iso Kicks</h1>
-                <span className="rightside">
+                </Link>
+                </span>
+                <span className="rightside1">
                     <Link to="/login">
                         <img src={user}></img>
                     </Link>
                 </span>
-                <span>
+                <span className="rightside2">
                     <Link to="/cart">
                         <img src={cart}></img>
                     </Link>
