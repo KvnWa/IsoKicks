@@ -10,17 +10,27 @@ import user from '../images/user.svg'
 const Navbar = () => {
     return (
         <nav>
-            <div className="Navbar">
-                <img src={search}></img>
-                <img src={fav}></img>
+            <div className="navbar">
+                <span className="leftside">
+                    <img src={search}></img>
+                </span>
+                <span>
+                    <img src={fav}></img>
+                </span>
                 <h1 className="navbar-logo">Iso Kicks</h1>
-                <img src={user}></img>
-                <Link to="/cart">
-                <img src={cart}></img>
-                </Link>
+                <span className="rightside">
+                    <Link to="/login">
+                        <img src={user}></img>
+                    </Link>
+                </span>
+                <span>
+                    <Link to="/cart">
+                        <img src={cart}></img>
+                    </Link>
+                </span>
             </div>
         </nav>
-    ) 
-} 
+    )
+}
 
 export default Navbar

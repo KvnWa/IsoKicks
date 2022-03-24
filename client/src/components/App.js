@@ -4,20 +4,22 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Navbar from './Navbar/Navbar.jsx'
 import Login from './Login/Login.jsx'
 import Cart from './Cart/Cart.jsx'
+import LandingPage from './LandingPage/LandingPage.jsx'
 
 
 const App = () => {
   return (
     <Router>
-    <div>
+        <Navbar/>
       <Route exact path="/">
-      <Navbar />
+        <LandingPage />
       </Route>
       <Route exact path="/cart">
-      <Cart />
+        <Cart />
       </Route>
-      <Login />
-    </div>
+      <Route exact path="/login">
+        <Login />
+      </Route>
     </Router>
   )
 }
