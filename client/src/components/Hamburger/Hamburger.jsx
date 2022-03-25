@@ -11,10 +11,13 @@ const Hamburger = () => {
                 <span></span>
                 <span></span>
                 <ul id="menu">
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>About</li></a>
-                    <a href="#"><li>Info</li></a>
-                    <a href="#"><li>Contact</li></a>
+                    <a href="#"><li>Shop All</li></a>
+                    <a href="#"><li>Nike</li></a>
+                    <a href="#"><li>Adidas</li></a>
+                    <a href="#"><li>New Balance</li></a>
+                    <a href="#"><li>Mens</li></a>
+                    <a href="#"><li>Womens</li></a>
+                    <a href="#"><li>Kids</li></a>
                 </ul>
             </div>
         </nav>

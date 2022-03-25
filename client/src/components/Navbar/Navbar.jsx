@@ -16,9 +16,6 @@ const Navbar = () => {
                 <span className="leftside1">
                     <Hamburger />
                 </span>
-                <span className="leftside2">
-                    <img src={fav}></img>
-                </span>
                 <span className="logo">
                 <Link to='/'>
                 <h1 className="navbar-logo">Iso Kicks</h1>
