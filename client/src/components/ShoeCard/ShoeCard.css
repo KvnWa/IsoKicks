@@ -1,0 +1,26 @@
+.shoecontainer {
+    grid-template-columns: repeat(5,1fr);
+    column-gap: 14px;
+    font-size: 12px;
+    display: grid;
+    grid-auto-rows: auto;
+
+}
+
+.shoecard {
+    border: .5px gainsboro solid;
+    width: 100%;
+    border-radius: 10px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.shoecard img {
+    object-fit: contain;
+    
+}
+
+.heart {
+    position: relative;
+
+}

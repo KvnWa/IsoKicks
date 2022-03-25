@@ -5,6 +5,7 @@ import Navbar from './Navbar/Navbar.jsx'
 import Login from './Login/Login.jsx'
 import Cart from './Cart/Cart.jsx'
 import Footer from './Footer/Footer.jsx'
+import ShoeCard from './ShoeCard/ShoeCard.jsx'
 import LandingPage from './LandingPage/LandingPage.jsx'
 
 
@@ -21,6 +22,9 @@ const App = () => {
       </Route>
       <Route exact path="/login">
         <Login />
+      </Route>
+      <Route exact path="/shoecard">
+        <ShoeCard />
       </Route>
     </Router>
     <Footer />
