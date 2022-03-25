@@ -1,34 +1,32 @@
 .slider-container {
     padding-left: 100px;
     padding-top: 100px;
-    
+    grid-column: 1 / -1;
+
+
 }
 
 
 .slider {
-    position: absolute;
-    
-    /* grid-template-columns: auto auto auto auto auto; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* height:  */
     overflow-x: scroll;
-    display: grid;
-    align-items: center;
-    grid-auto-flow: row;
-    grid-auto-rows: 25%; 
-    grid-template-columns: unset; 
-    grid-template-rows: unset;
-    
 }
 
 
 .sli-c {
-    width: 300px;
-    height: 425px;
-    overflow: hidden;
-    object-fit: cover;
+ 
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    text-align: center;
 }
 
 .sli-c img {
     width: 300px;
     height: 300px;
 }
-
