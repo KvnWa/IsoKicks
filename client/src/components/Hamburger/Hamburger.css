@@ -108,7 +108,7 @@
  {
    position: absolute;
    width: 300px;
-   margin: -100px 0 0 -50px;
+   margin: -100px 0 0 -100px;
    padding: 50px;
    padding-top: 125px;
    
@@ -121,6 +121,8 @@
    transform: translate(-100%, 0);
    
    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+   z-index: -99;
+   opacity: 0.9;
  }
  
  #menu li
