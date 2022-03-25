@@ -13,9 +13,7 @@ const Navbar = () => {
         <nav>
             
             <div className="navbar">
-                <span className="leftside1">
                     <Hamburger />
-                </span>
                 <span className="logo">
                 <Link to='/'>
                 <h1 className="navbar-logo">Iso Kicks</h1>
