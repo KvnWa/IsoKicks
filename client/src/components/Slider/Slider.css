@@ -1,0 +1,25 @@
+.slider-container {
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+
+.slider {
+    position: absolute;
+    display: flex;
+    /* grid-template-columns: auto auto auto auto auto; */
+    overflow-x: scroll;
+}
+
+
+.sli-c {
+    width: 300px;
+    height: 425px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.sli-c img {
+    width: 300px;
+    height: 300px;
+}

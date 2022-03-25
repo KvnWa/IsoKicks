@@ -6,13 +6,15 @@ import exit from '../images/exit.svg'
 import fav from '../images/fav.svg'
 import search from '../images/search.svg'
 import user from '../images/user.svg'
+import Hamburger from '../Hamburger/Hamburger';
 
 const Navbar = () => {
     return (
         <nav>
+            
             <div className="navbar">
                 <span className="leftside1">
-                    <img src={search}></img>
+                    <Hamburger />
                 </span>
                 <span className="leftside2">
                     <img src={fav}></img>
