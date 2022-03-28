@@ -3,8 +3,9 @@ import mocha from '../images/mocha.jpeg'
 import ald from '../images/ald.jpeg'
 import './LandingPage.css'
 import Slider from '../Slider/Slider'
+import ShoeCard from '../ShoeCard/ShoeCard'
 
-const LandingPage = () => {
+const LandingPage = ({sneakers}) => {
   return (
     <div className="splash-container">
       <img src={ald} className="splash-image"></img>
