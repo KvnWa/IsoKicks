@@ -1,10 +1,10 @@
 User.destroy_all
-Listng.destroy_all
+Listing.destroy_all
 Sneaker.destroy_all
 
-demo = User.create(full_name: "Harris Sultan", address: "167 West 4th Street, New York, NY, 10014", email: "ronweasleyfan62@gmail.com", password: "1234")
+demo = User.create(full_name: "Harris Sultan", address: "167 West 4th Street, New York, NY, 10014", username: "ronweasleyfan", password: "1234")
 
-
+puts "Creating sneakers"
 sneaker1 = Sneaker.create(brand: "Nike", title: "AIR JORDAN 1 RETRO HIGH OG Dark Mocha", price: 550 , imageone: "https://img.stadiumgoods.com/15/95/78/61/15957861_29809198_2048.jpg", imagetwo: "https://img.stadiumgoods.com/15/95/78/61/15957861_29809200_2048.jpg", imagethree: "https://img.stadiumgoods.com/15/95/78/61/15957861_29809199_2048.jpg")
 sneaker2 = Sneaker.create(brand: "Nike", title: "KOBE 11 ELITE LOW 4KB Ghost of Christmas Past", price: 825, imageone: "https://img.stadiumgoods.com/nike-kobe-11-elite-low-4kb-ghost-of-christmas-past_13429030_34441300_2048.jpg", imagetwo: "https://img.stadiumgoods.com/nike-kobe-11-elite-low-4kb-ghost-of-christmas-past_13429030_34441310_2048.jpg", imagethree: "https://img.stadiumgoods.com/nike-kobe-11-elite-low-4kb-ghost-of-christmas-past_13429030_34441313_2048.jpg")
 sneaker3 = Sneaker.create(brand: "Nike", title: "DUNK LOW RETRO Syracuse", price: 819, imageone: "https://img.stadiumgoods.com/nike-dunk-low-retro-syracuse_15282465_27639174_2048.jpg", imagetwo: "https://img.stadiumgoods.com/nike-dunk-low-retro-syracuse_15282465_27639176_2048.jpg", imagethree: "https://img.stadiumgoods.com/nike-dunk-low-retro-syracuse_15282465_27639177_2048.jpg")
@@ -35,3 +35,5 @@ sneaker27 = Sneaker.create(brand: "New Balance", title: "550 Aimé Leon Dore - W
 sneaker28 = Sneaker.create(brand: "New Balance", title: "550 Rich Paul", price: 439, imageone: "https://img.stadiumgoods.com/new-balance-550-rich-paul_17935191_37845126_2048.jpg", imagetwo: "https://img.stadiumgoods.com/new-balance-550-rich-paul_17935191_37845128_2048.jpg", imagethree: "https://img.stadiumgoods.com/new-balance-550-rich-paul_17935191_37845129_2048.jpg")
 sneaker29 = Sneaker.create(brand: "New Balance", title: "990V3 Levi's - Elephant Skin", price: 409, imageone: "https://img.stadiumgoods.com/new-balance-990v3-levis-elephant-skin_17420784_36024231_2048.jpg", imagetwo: "https://img.stadiumgoods.com/new-balance-990v3-levis-elephant-skin_17420784_36022701_2048.jpg", imagethree: "https://img.stadiumgoods.com/new-balance-990v3-levis-elephant-skin_17420784_36024236_2048.jpg")
 sneaker30 = Sneaker.create(brand: "New Balance", title: "920 MTA - NYC Subway", price: 390, imageone: "https://img.stadiumgoods.com/new-balance-920-mta-nyc-subway_17139863_34666541_2048.jpg", imagetwo: "https://img.stadiumgoods.com/new-balance-920-mta-nyc-subway_17139863_34667507_2048.jpg", imagethree: "https://img.stadiumgoods.com/new-balance-920-mta-nyc-subway_17139863_34667509_2048.jpg")
+
+puts "done seeding"
