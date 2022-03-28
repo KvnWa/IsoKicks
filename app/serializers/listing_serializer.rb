@@ -1,4 +1,4 @@
 class ListingSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes 
   has_one :sneaker
 end

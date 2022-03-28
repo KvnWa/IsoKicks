@@ -1,3 +1,3 @@
 class SneakerSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes 
 end
