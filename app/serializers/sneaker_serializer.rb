@@ -1,3 +1,3 @@
 class SneakerSerializer < ActiveModel::Serializer
-  attributes 
+  attributes :id, :brand, :title, :price, :imageone, :imagetwo, :imagethree
 end
