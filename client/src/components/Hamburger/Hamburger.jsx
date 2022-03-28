@@ -11,7 +11,7 @@ const Hamburger = () => {
                 <span></span>
                 <span></span>
                 <ul id="menu">
-                    <a href="#"><li>Shop All</li></a>
+                    <a href="product"><li>Shop All</li></a>
                     <a href="#"><li>Nike</li></a>
                     <a href="#"><li>Adidas</li></a>
                     <a href="#"><li>New Balance</li></a>
