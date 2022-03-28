@@ -6,7 +6,13 @@ class SneakersController < ApplicationController
     end
 
     def show
-        sneaker = Sneaker.find_by(params[:id])
+        sneaker = find_sneaker
         render json: sneaker
+    end
+
+    private
+
+    def find_sneaker
+        Sneaker.find(params[:id])
     end
 end

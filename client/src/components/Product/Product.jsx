@@ -18,6 +18,7 @@ const Product = () => {
 
   const handleButtonClick = () => {
     fetchData();
+    console.log("click")
   }
 
   return (
