@@ -31,7 +31,7 @@ function ProductDetail() {
       </div>
       <div className="product-desc">
         <h1>{title}</h1>
-        <h3>$ {price}</h3>
+        <h3>${price}</h3>
         <div className="product-variants">
           <span class="text-noerror">Select Size</span>
         </div>
@@ -52,6 +52,9 @@ function ProductDetail() {
         <div className="btn-container">
           <button className="add">Add To Bag</button>
         </div>
+        <h4 className="panel-toggle">Product Details and Sizing</h4>
+        <h4 className="panel-toggle-h" style={{display: 'none'}}>rain camo print</h4>
+        <h4 className="panel-toggle">Delivery and Returns</h4>
       </div>
 
     </div>
