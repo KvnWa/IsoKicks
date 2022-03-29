@@ -39,7 +39,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 95%;
     cursor: pointer;
     transition: border .2s ease;
     
@@ -51,5 +51,29 @@
 }
 
 .btn-container {
-    padding-left: 60px
+    padding-left: 60px;
+    padding-bottom: 20px;
 }
+
+.panel-toggle {
+    font-size: .75rem;
+    cursor: pointer;
+    padding: 13.3333px 20px 13.3333px 0;
+    position: relative;
+    border-bottom: 1px solid #181818;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
