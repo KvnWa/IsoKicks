@@ -2,12 +2,17 @@ import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import grailed from '../images/grailed.jpeg'
 import './Login.css';
+import { useHistory } from 'react-router-dom'
 
-const Login = () => {
+const Login = ({ setUser }) => {
 
-    const [email, setEmail] = useState("")
+    const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
+    const [ full_name, setFull_Name ] = useState("")
+    const [errors, setErrors ] = useState([]);
     const [formType, setFormType ] = useState(true)
+
+    const history = useHistory();
 
     function onFormClick() {
         setFormType(formType => !formType)
@@ -15,37 +20,73 @@ const Login = () => {
 
     function handleSubmit(e) {
         e.preventDefault();
+        fetch('/login', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({username, password}),
+        }).then((r) => {
+            if (r.ok) {
+                r.json().then((user) => {
+                    setUser(user)
+                    history.push('/cart')
+                });
+            } else {
+                r.json().then((error) => setErrors(error.errors));
+            }
+        });
     }
+
+    function handleSignup(e) {
+        e.preventDefault();
+        fetch('/signup', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                username,
+                password,
+                full_name
+            }),
+        }).then((r) => {
+            if (r.ok) {
+                r.json().then((user) => { setUser(user)
+                    history.push('/')
+                });
+            } else {
+                r.json().then((error) => alert(error.errors));
+            }
+        });
+    }
+
 
     return (
         <div className="bigcontainer">
         <div className={formType ? "container" : "container right-panel-active"} id="container">
             <div className="form-container sign-up-container">
-                <form action="#">
+                <form onSubmit={handleSignup}>
                     <h1>Create Account</h1>
                     <div className="social-container">
-                        <a href="#" className="social"><FontAwesomeIcon icon="fa-brands fa-google-plus-g" /></a>
-                        <a href="#" className="social"><FontAwesomeIcon icon="fa-brands fa-google-plus-g" /></a>
-                        <a href="#" className="social"><FontAwesomeIcon icon="fa-brands fa-google-plus-g" /></a>
+                       
                     </div>
-                    <input type="text" placeholder="Name" />
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
-                    <button className="button1">Sign Up</button>
+                    <input type="text" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)}/>
+                    <input type="email" placeholder="Full Name" value={full_name} onChange={(e) => setFull_Name(e.target.value)}/>
+                    <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
+                    <button className="button1" onClick={handleSignup}>Sign Up</button>
                 </form>
             </div>
             <div className="form-container sign-in-container">
-                <form action="#">
+                <form onSubmit={handleSubmit}>
                     <h1>Sign in</h1>
                     <div className="social-container">
-                        <a href="#" className="social"><i className="fab fa-facebook-f"></i></a>
-                        <a href="#" className="social"><i className="fab fa-google-plus-g"></i></a>
-                        <a href="#" className="social"><i className="fab fa-linkedin-in"></i></a>
+            
                     </div>
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
+                    <input type="username" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)}/>
+                    <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}/>
                     <a href="#">Forgot your password?</a>
-                    <button >Sign In</button>
+                    <button onClick={handleSubmit} >Sign In</button>
                 </form>
             </div>
             <div className="overlay-container">
