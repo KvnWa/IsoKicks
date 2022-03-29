@@ -1,4 +1,5 @@
 class SneakersController < ApplicationController
+    skip_before_action :authorize
 
     def index
         sneakers = Sneaker.all 
