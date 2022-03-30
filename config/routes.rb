@@ -1,7 +1,6 @@
 # config/routes.rb
 Rails.application.routes.draw do
     resources :sneakers
-    resources :listings
     resources :cart_items
     resources :users
     get '/me', to: "users#show"

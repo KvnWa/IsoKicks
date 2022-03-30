@@ -12,9 +12,15 @@ class UsersController < ApplicationController
         render json: @current_user 
     end
 
+    def destroy
+        user = @user
+        user.destroy
+        head :no_content
+    end
+
     private
     
     def user_params 
-        params.permit(:full_name, :username, :password)
+        params.permit(:first_name, :last_name, :username, :password)
     end
 end

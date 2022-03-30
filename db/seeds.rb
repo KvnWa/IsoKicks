@@ -1,8 +1,7 @@
 User.destroy_all
-Listing.destroy_all
 Sneaker.destroy_all
 
-demo = User.create(full_name: "Harris Sultan", address: "167 West 4th Street, New York, NY, 10014", username: "ronweasleyfan", password: "1234")
+demo = User.create(first_name: "Harris", last_name: "Sultan", username: "ronweasleyfan", password: "1234")
 
 puts "Creating sneakers"
 sneaker1 = Sneaker.create(brand: "Nike", title: "AIR JORDAN 1 RETRO HIGH OG Dark Mocha", price: 550 , imageone: "https://img.stadiumgoods.com/15/95/78/61/15957861_29809198_2048.jpg", imagetwo: "https://img.stadiumgoods.com/15/95/78/61/15957861_29809200_2048.jpg", imagethree: "https://img.stadiumgoods.com/15/95/78/61/15957861_29809199_2048.jpg")

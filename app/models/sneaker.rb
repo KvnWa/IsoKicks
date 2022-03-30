@@ -1,7 +1,7 @@
 class Sneaker < ApplicationRecord
 
-    validates :brand, :title, :price, presence: true
+    validates :brand, :title, :price, :imageone, presence: true
 
 
-    has_many :listings
+    has_many :cart_items
 end

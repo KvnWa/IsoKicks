@@ -16,20 +16,13 @@ ActiveRecord::Schema.define(version: 2022_03_28_154556) do
   enable_extension "plpgsql"
 
   create_table "cart_items", force: :cascade do |t|
-    t.bigint "user_id", null: false
-    t.bigint "listing_id", null: false
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.index ["listing_id"], name: "index_cart_items_on_listing_id"
-    t.index ["user_id"], name: "index_cart_items_on_user_id"
-  end
-
-  create_table "listings", force: :cascade do |t|
-    t.bigint "sneaker_id", null: false
     t.integer "size"
+    t.bigint "user_id", null: false
+    t.bigint "sneaker_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["sneaker_id"], name: "index_listings_on_sneaker_id"
+    t.index ["sneaker_id"], name: "index_cart_items_on_sneaker_id"
+    t.index ["user_id"], name: "index_cart_items_on_user_id"
   end
 
   create_table "sneakers", force: :cascade do |t|
@@ -44,16 +37,14 @@ ActiveRecord::Schema.define(version: 2022_03_28_154556) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "full_name"
-    t.string "address"
+    t.string "first_name"
+    t.string "last_name"
     t.string "username"
-    t.string "session_token"
     t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "cart_items", "listings"
+  add_foreign_key "cart_items", "sneakers"
   add_foreign_key "cart_items", "users"
-  add_foreign_key "listings", "sneakers"
 end

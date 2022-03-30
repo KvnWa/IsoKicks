@@ -33,7 +33,7 @@ function ProductDetail() {
         <h1>{title}</h1>
         <h3>${price}</h3>
         <div className="product-variants">
-          <span class="text-noerror">Select Size</span>
+          <span className="text-noerror">Select Size</span>
         </div>
         <div className="swatch-size">
           <div className="swatch-size-item">4</div>
