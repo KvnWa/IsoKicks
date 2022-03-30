@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Login.css'
 
-function Login({ username, setUsername, password, setPassword, handleLogInSubmit, signUpFirstName, setSignUpFirstName, signUpLastName, setSignUpLastName, signUpUsername, setSignUpUsername, signUpPassword, setSignUpPassword, signUpPasswordConfirmation, setSignUpPasswordConfirmation, handleSignUpSubmit }) {
+function Login({ username, setUsername, password, setPassword, handleLogInSubmit, signUpFirstName, setSignUpFirstName, signUpLastName, setSignUpLastName, signUpUsername, setSignUpUsername, signUpPassword, setSignUpPassword, signUpPasswordConfirmation, setSignUpPasswordConfirmation, handleSignUpSubmit, onLogin }) {
 
     const [formType, setFormType] = useState(true)
 
@@ -9,6 +9,7 @@ function Login({ username, setUsername, password, setPassword, handleLogInSubmit
         setFormType(formType => !formType)
     }
 
+    
 
     return (
         <div className="sign-container">

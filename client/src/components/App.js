@@ -9,6 +9,7 @@ import ShoeCard from './ShoeCard/ShoeCard.jsx'
 import Product from './Product/Product.jsx'
 import LandingPage from './LandingPage/LandingPage.jsx'
 import ProductDetail from './ProductDetail/ProductDetail.jsx'
+import ProfilePage from './ProfilePage/ProfilePage'
 import axios from 'axios'
 
 
@@ -24,8 +25,6 @@ const App = () => {
   const [signUpUsername, setSignUpUsername] = useState("");
   const [signUpPassword, setSignUpPassword] = useState("");
   const [signUpPasswordConfirmation, setSignUpPasswordConfirmation] = useState("");
-  const [signUpImage, setSignUpImage] = useState("");
-  const [signUpDesc,setSignUpDesc] = useState("");
 
   // Log In:
   const [username, setUsername] = useState("");
@@ -34,8 +33,6 @@ const App = () => {
   // Signed In:
   const [signedIn, setSignedIn] = useState(false);
   const [user,setUser] = useState(null)
-
-
 
   useEffect(()=>{
     // axios.get('/me').then(r=>{console.log(r)})
@@ -51,6 +48,15 @@ const App = () => {
     });
 
   },[])
+
+  function handleLogOut(){
+    axios.delete('/logout')
+    .then(r=>{
+      setSignedIn(false);
+      setUser(null);
+      history.push('/')
+    })
+  }
 
   function handleSignUpSubmit(e) {
     e.preventDefault();
@@ -134,7 +140,6 @@ const App = () => {
     console.log("click")
   }
 
-
   return (
     <>
       <Router>
@@ -166,6 +171,12 @@ const App = () => {
             handleSignUpSubmit={handleSignUpSubmit}
             handleLogOut={handleLogOut}/>
         </Route>
+        <Route path='/profile'>
+              <ProfilePage
+                signedIn={signedIn}
+                handleLogOut={handleLogOut}
+              />
+          </Route>
         <Route exact path="/shoecard">
           <ShoeCard />
         </Route>

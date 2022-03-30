@@ -1,13 +1,12 @@
 import React, { useEffect } from 'react'
 
-const CartCard = ({ cart, handleButtonClick, id, deleteForever }) => {
+const CartCard = ({ cart, id, deleteForever }) => {
 
     const handleRemoveClick = () => {
         fetch(`/cart_items/${id}`, {
             method: 'DELETE',
         }).then((r) => r.json())
-        .then(deleteForever(id));
-
+            .then(deleteForever(id));
     };
 
 
@@ -24,10 +23,8 @@ const CartCard = ({ cart, handleButtonClick, id, deleteForever }) => {
                     </div>
                     <div className="cart-left-d">
                     </div>
-
                 </div>
                 <button onClick={handleRemoveClick}></button>
-
             </div>
         </div>
     )
