@@ -1,11 +1,14 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import mocha from '../images/mocha.jpeg'
 import ald from '../images/ald.jpeg'
 import './LandingPage.css'
 import Slider from '../Slider/Slider'
+import axios from 'axios'
 
 
-const LandingPage = () => {
+const LandingPage = ({sneakers}) => {
+
+
 
   return (
     <div className="splash-container">
@@ -24,7 +27,7 @@ const LandingPage = () => {
           <button>Shop</button>
         </div>
       </div>
-      <Slider />
+      <Slider sneakers={sneakers}/>
     </div>
   )
 }

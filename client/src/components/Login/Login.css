@@ -12,7 +12,6 @@
 	height: 80vh;
 }
 
-
 .form2-container {
 	display: flex;
 	justify-content: center;
@@ -35,13 +34,12 @@
 
 }
 
-
 .form2-signin-title{
 
 	margin: 0;
 	margin-bottom: 3%;
-	color: #333e6b;
-	font-size: 300%;
+	color: #181818;
+	font-size: 200%;
 	
 }
 
@@ -80,7 +78,7 @@
 
 .form2-button:hover{
 	border: 1px solid transparent;
-	background-color: rgb(127, 247, 91)
+	background-color: #181818
 }
 
 
@@ -99,7 +97,7 @@
 }
 
 .ghost:hover {
-	background-color: #ff44c7;
+	background-color: #181818;
 	border-color: transparent;
 }
 
@@ -146,7 +144,7 @@
 }
 
 .container {
-	background-color: rgb(27, 27, 27);
+	background-color: #ffff;
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
@@ -216,7 +214,7 @@
 }
 
 .overlay {
-	background: linear-gradient(to right, #9b9797, #3a3b3c);
+	background: linear-gradient(to right, #2407cc, #040553);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;

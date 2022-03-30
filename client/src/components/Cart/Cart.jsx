@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Cart.css';
 
-const Cart = () => {
+const Cart = ({sneakers}) => {
 
+ 
   const sneaker = {
     "brand": "Nike",
     "title": "Jordan 1 Mocha",

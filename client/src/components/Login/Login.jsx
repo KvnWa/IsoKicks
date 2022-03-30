@@ -41,13 +41,13 @@ function Login({ username, setUsername, password, setPassword, handleLogInSubmit
                     <div className="overlay-container">
                         <div className="overlay">
                             <div className="overlay-panel overlay-left">
-                                <h1 className='form2-welcome'>Welcome</h1>
-                                <p className='form2-subtitle'>To create and save your favorite drinks, please log in.</p>
+                                <h1 className='form2-welcome'>Already have an Account?</h1>
+                                <p className='form2-subtitle'>Sign in to get started</p>
                                 <button onClick={onFormClick} className=" form2-button ghost" id="signIn">Sign In</button>
                             </div>
                             <div className="overlay-panel overlay-right">
                                 <h1 className='form2-welcome'>Welcome</h1>
-                                <p className='form2-subtitle'>Before we start mixing, you'll need to provide some information.</p>
+                                <p className='form2-subtitle'>Hello friend, looks like you're new here. We need some info.</p>
                                 <button onClick={onFormClick} className="form2-button ghost" id="signUp">Sign Up</button>
                             </div>
                         </div>

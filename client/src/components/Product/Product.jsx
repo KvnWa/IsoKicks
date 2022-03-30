@@ -3,9 +3,9 @@ import ShoeCard from '../ShoeCard/ShoeCard'
 import './Product.css'
 import axios from 'axios';
 
-const Product = () => {
+const Product = ({sneakers, handleButtonClick}) => {
 
-  const [sneakers, setSneakers] = useState([])
+  // const [sneakers, setSneakers] = useState([])
 
   // const fetchData = () => {
   //   fetch('http://127.0.0.1:3000/sneakers')
@@ -18,25 +18,25 @@ const Product = () => {
   //   fetchData();
   // }, []);
 
-  const fetchData = async () => {
-    try {
-      const resp = await axios.get('/sneakers');
-      setSneakers(resp.data);
-    } catch(err) {
-      console.error(err)
-    }
-  }
+  // const fetchData = async () => {
+  //   try {
+  //     const resp = await axios.get('/sneakers');
+  //     setSneakers(resp.data);
+  //   } catch(err) {
+  //     console.error(err)
+  //   }
+  // }
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
 
   
 
-  const handleButtonClick = () => {
-    fetchData();
-    console.log("click")
-  }
+  // const handleButtonClick = () => {
+  //   fetchData();
+  //   console.log("click")
+  // }
 
   return (
     <div className="shoecontainer">

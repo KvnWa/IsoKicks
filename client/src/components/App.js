@@ -14,6 +14,8 @@ import axios from 'axios'
 
 const App = () => {
   let history = useHistory();
+
+  const [ sneakers, setSneakers ]= useState([]);
   //User Auth:
 
   // Sign Up:
@@ -49,8 +51,6 @@ const App = () => {
     });
 
   },[])
-
-
 
   function handleSignUpSubmit(e) {
     e.preventDefault();
@@ -91,7 +91,6 @@ const App = () => {
       console.log(r)
       // console.log(r)
       setSignedIn(true)
-
       setUser(r.data)
   
     })
@@ -117,16 +116,34 @@ const App = () => {
     })
   }
 
+  const fetchData = async () => {
+    try {
+      const resp = await axios.get('/sneakers');
+      setSneakers(resp.data);
+    } catch(err) {
+      console.error(err)
+    }
+  }
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const handleButtonClick = () => {
+    fetchData();
+    console.log("click")
+  }
+
 
   return (
     <>
       <Router>
         <Navbar />
         <Route exact path="/">
-          <LandingPage />
+          <LandingPage sneakers={sneakers}/>
         </Route>
         <Route exact path="/cart">
-          <Cart />
+          <Cart sneakers={sneakers}/>
         </Route>
         <Route exact path="/login">
           <Login 
@@ -153,7 +170,7 @@ const App = () => {
           <ShoeCard />
         </Route>
         <Route exact path="/product">
-          <Product />
+          <Product sneakers={sneakers} handleButtonClick={handleButtonClick}/>
         </Route>
         <Route exact path="/sneakers/:id">
           <ProductDetail />
