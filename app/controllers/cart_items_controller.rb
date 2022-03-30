@@ -1,5 +1,5 @@
 class CartItemsController < ApplicationController
-    skip_before_action :authorize
+    
 
     def create
         puts cart_item_params
@@ -16,11 +16,16 @@ class CartItemsController < ApplicationController
     end
 
     def destroy
-        cart_item = CartItem.find_by(id: params[:id])
+        cart_item = find_item
         cart_item.destroy
     end
 
     private
+
+    def find_item
+        CartItem.find(params[:id])
+    end
+
     
     def cart_item_params
         params.permit(:user_id, :size, :sneaker_id)

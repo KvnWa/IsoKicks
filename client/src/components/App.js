@@ -143,7 +143,7 @@ const App = () => {
           <LandingPage sneakers={sneakers}/>
         </Route>
         <Route exact path="/cart">
-          <Cart sneakers={sneakers} user={user}/>
+          <Cart sneakers={sneakers} user={user} handleButtonClick={handleButtonClick}/>
         </Route>
         <Route exact path="/login">
           <Login 
