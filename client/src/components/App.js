@@ -143,7 +143,7 @@ const App = () => {
           <LandingPage sneakers={sneakers}/>
         </Route>
         <Route exact path="/cart">
-          <Cart sneakers={sneakers}/>
+          <Cart sneakers={sneakers} user={user}/>
         </Route>
         <Route exact path="/login">
           <Login 
@@ -173,7 +173,7 @@ const App = () => {
           <Product sneakers={sneakers} handleButtonClick={handleButtonClick}/>
         </Route>
         <Route exact path="/sneakers/:id">
-          <ProductDetail />
+          <ProductDetail user={user} />
         </Route>
       </Router>
       <Footer />
