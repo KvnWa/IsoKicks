@@ -13,15 +13,15 @@ import ProductDetail from './ProductDetail/ProductDetail.jsx'
 
 const App = () => {
 
-  const [ user, setUser ] = useState(null)
+  // const [ user, setUser ] = useState(null)
 
-  useEffect(() => {
-    fetch('/me').then((r) => {
-      if(r.ok) {
-        r.json().then((data) => setUser(data))
-      }
-    })
-  }, []);
+  // useEffect(() => {
+  //   fetch('/me').then((r) => {
+  //     if(r.ok) {
+  //       r.json().then((data) => setUser(data))
+  //     }
+  //   })
+  // }, []);
 
 
   return (
@@ -35,7 +35,7 @@ const App = () => {
           <Cart />
         </Route>
         <Route exact path="/login">
-          <Login user={user} setUser={setUser}/>
+          {/* <Login user={user} setUser={setUser}/> */}
         </Route>
         <Route exact path="/shoecard">
           <ShoeCard />
