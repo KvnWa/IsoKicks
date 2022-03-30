@@ -10,7 +10,7 @@ function ProductDetail({user}) {
 
   useEffect(() => {
     console.log(id);
-    fetch(`http://127.0.0.1:3000/sneakers/${id}`)
+    fetch(`/sneakers/${id}`)
       .then((r) => r.json())
       .then((sneaker) => setSneaker(sneaker));
   }, [id])
