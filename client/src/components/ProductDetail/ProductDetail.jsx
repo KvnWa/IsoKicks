@@ -2,9 +2,10 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 import './ProductDetail.css'
 
-function ProductDetail() {
+function ProductDetail({user}) {
 
   const [sneaker, setSneaker] = useState(null);
+  const [ selectSize, setSelectSize ] = useState(1);
   const { id } = useParams();
 
   useEffect(() => {
@@ -15,6 +16,30 @@ function ProductDetail() {
   }, [id])
 
   if (!sneaker) return <h2>Loading sneaker data...</h2>;
+
+  function valueClick(e) {
+    const size = (e.target.innerText)
+    setSelectSize(size)
+  
+  }
+
+  const handleAddClick = () => {
+    console.log(user)
+    fetch('/cart_items', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        sneaker_id: sneaker.id,
+        user_id: user.id,
+        size: selectSize
+      }),
+    }).then((r) => r.json());
+
+   
+  };
+
 
   const { brand, title, price, imageone, imagetwo, imagethree } = sneaker;
 
@@ -36,21 +61,21 @@ function ProductDetail() {
           <span className="text-noerror">Select Size</span>
         </div>
         <div className="swatch-size">
-          <div className="swatch-size-item">4</div>
-          <div className="swatch-size-item">5</div>
-          <div className="swatch-size-item">6</div>
-          <div className="swatch-size-item">7</div>
-          <div className="swatch-size-item">8</div>
-          <div className="swatch-size-item">9</div>
-          <div className="swatch-size-item">10</div>
-          <div className="swatch-size-item">11</div>
-          <div className="swatch-size-item">12</div>
-          <div className="swatch-size-item">13</div>
-          <div className="swatch-size-item">14</div>
-          <div className="swatch-size-item">15</div>
+          <div className="swatch-size-item"  onClick={valueClick}>4</div>
+          <div className="swatch-size-item" onClick={valueClick}>5</div>
+          <div className="swatch-size-item" onClick={valueClick}>6</div>
+          <div className="swatch-size-item" onClick={valueClick}>7</div>
+          <div className="swatch-size-item" onClick={valueClick}>8</div>
+          <div className="swatch-size-item" onClick={valueClick}>9</div>
+          <div className="swatch-size-item" onClick={valueClick}>10</div>
+          <div className="swatch-size-item" onClick={valueClick}>11</div>
+          <div className="swatch-size-item" onClick={valueClick}>12</div>
+          <div className="swatch-size-item" onClick={valueClick}>13</div>
+          <div className="swatch-size-item" onClick={valueClick}>14</div>
+          <div className="swatch-size-item" onClick={valueClick}>15</div>
         </div>
         <div className="btn-container">
-          <button className="add">Add To Bag</button>
+          <button className="add" onClick={handleAddClick}>Add To Bag</button>
         </div>
         <h4 className="panel-toggle">Product Details and Sizing</h4>
         <h4 className="panel-toggle-h" style={{display: 'none'}}>rain camo print</h4>

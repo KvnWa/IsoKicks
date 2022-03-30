@@ -1,13 +1,18 @@
 class CartItemsController < ApplicationController
+    skip_before_action :authorize
 
     def create
+        puts cart_item_params
         cart_item = CartItem.create!(cart_item_params)
         render json: cart_item
+
     end
 
     def index
-        cart_items = current_user.cart_items
+        cart_items = CartItem.all
         render json: cart_items
+        # cart_items = current_user.cart_items
+        # render json: cart_items
     end
 
     def destroy
@@ -18,6 +23,6 @@ class CartItemsController < ApplicationController
     private
     
     def cart_item_params
-        params.require(:cart_item).permit(:user_id)
+        params.permit(:user_id, :size, :sneaker_id)
     end
 end
