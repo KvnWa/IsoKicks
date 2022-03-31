@@ -84,15 +84,28 @@ font-size: .9rem;
 
 .red-text{
     color: #a41d23;
+    
+}
+
+.red-text-1 {
+    color: #a41d23;
+    text-decoration: underline;
 }
 
 .journal {
-    background-color: grey;
-    width: 500px;
+    background-color: white;
+    width: 600px;
     position: relative;
     margin: 0 auto;
     align-items: center;
-    
+    bottom: 60px;
+    overflow-wrap: break-word;
+    padding: 10px 10px;
+  
+}
+
+.journal p {
+    line-height: 24px;
 }
 
 

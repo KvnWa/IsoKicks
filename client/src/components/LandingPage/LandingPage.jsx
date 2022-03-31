@@ -31,8 +31,8 @@ const LandingPage = ({ sneakers }) => {
           <div className="journal">
             <h5 className="red-text">Journal</h5>
             <h4>Sneakers You Need to Know: Nike Air Max 1</h4>
-            <p className="cat-desc">Get educated on the most iconic Nike running shoe of all time with a guide to its history, colorways, collaborations, sizing info and more.</p>
-            <a className="red-text">Read More</a>
+            <p className="cat-desc">Get educated on the most iconic Nike running shoe of all time with a guide to its history, colorways, collaborations, sizing info and more. Do you have a favorite?</p>
+            <a className="red-text-1">Read More</a>
           </div>
         </div>
         <div className="oblock">
@@ -42,7 +42,7 @@ const LandingPage = ({ sneakers }) => {
             <h4>Celebrating Women’s History Month: Interview With Tiffany Thompson</h4>
             <p className="cat-desc">The renowned interior designer spoke to us about her journey from Nike to her own design business, who inspires her, and of course, her favorite sneakers.
             </p>
-            <a className="red-text">Read More</a>
+            <a className="red-text-1">Read More</a>
           </div>
         </div>
       </div>
