@@ -7,6 +7,7 @@ class CreateSneakers < ActiveRecord::Migration[6.1]
       t.string :imageone
       t.string :imagetwo
       t.string :imagethree
+      t.string :imagefour
 
       t.timestamps
     end

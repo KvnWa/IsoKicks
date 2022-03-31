@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 2022_03_28_154556) do
     t.string "imageone"
     t.string "imagetwo"
     t.string "imagethree"
+    t.string "imagefour"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

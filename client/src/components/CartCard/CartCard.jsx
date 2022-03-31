@@ -16,7 +16,7 @@ const CartCard = ({ cart, id, deleteForever }) => {
             <div className="cart-body">
                 <div className="cart-left">
                     <div className="cart-left-i">
-                        <img src={cart.sneaker.imageone}></img>
+                        <img src={cart.sneaker.imagefour}></img>
                         <p>{cart.sneaker.title}</p>
                         <p>${cart.sneaker.price}</p>
                         <p>Size {cart.size}</p>
