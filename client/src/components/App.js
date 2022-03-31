@@ -186,6 +186,7 @@ const App = () => {
               <ProfilePage
                 signedIn={signedIn}
                 handleLogOut={handleLogOut}
+                user={user}
               />
           </Route>
         <Route exact path="/shoecard">

@@ -7,8 +7,12 @@ import fav from '../images/fav.svg'
 import search from '../images/search.svg'
 import user from '../images/user.svg'
 import Hamburger from '../Hamburger/Hamburger';
+import ProfilePage from '../ProfilePage/ProfilePage.jsx';
 
-const Navbar = () => {
+const Navbar = ({signedIn}) => {
+
+
+    console.log(signedIn)
     return (
        
             <div className="navbar">
@@ -18,10 +22,10 @@ const Navbar = () => {
                 <h1 className="navbar-logo">Iso Kicks</h1>
                 </Link>
                 </span>
-                <span className="rightside1">
-                    <Link to="/login">
+                <span className="rightside1">{signedIn? 
+                    <Link to="/profile">
                         <img src={user}></img>
-                    </Link>
+                    </Link> : <Link to="/login"> <img src={user}></img></Link>}
                 </span>
                 <span className="rightside2">
                     <Link to="/cart">

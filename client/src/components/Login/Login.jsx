@@ -38,7 +38,7 @@ function Login({ username, setUsername, password, setPassword, handleLogInSubmit
                             <h1 className='form2-signin-title'>Sign in</h1>
                             <input className='form2-input' type="username" placeholder="Username" value={username} onChange={(e) => setUsername(e.target.value)} />
                             <input className='form2-input' type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
-                            <a className='form2-a' href="">Forgot your password?</a>
+                            <a className='form2-a'>Forgot your password?</a>
                             <button className='form2-button' onClick={handleLogInSubmit}>Sign In</button>
                         </form>
                     </div>

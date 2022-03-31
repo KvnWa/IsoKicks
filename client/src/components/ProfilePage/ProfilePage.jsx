@@ -3,7 +3,9 @@ import React, { useState, useEffect } from 'react'
 import { Route, Switch } from "react-router-dom";
 import axios from 'axios';
 
-function ProfilePage({ signedIn, handleLogOut }) {
+function ProfilePage({ signedIn, handleLogOut, user }) {
+
+    console.log(user)
 
 
     return (
@@ -26,7 +28,9 @@ function ProfilePage({ signedIn, handleLogOut }) {
                     </div>
                 </div>
                 <div className="profile-edit">
-                    <h4>Edit</h4>
+                    <a href="/reset" style={{textDecoration: "none"}}>
+                    <h4 style={{color: "#a41d23"}}>Edit</h4>
+                    </a>
                 </div>
             </div>
         </>
