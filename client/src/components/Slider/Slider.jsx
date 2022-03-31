@@ -13,27 +13,28 @@ const Slider = ({ sneakers }) => {
             <div className="slider">
                 <figure className="sli-c">
                     <a href="/sneakers/1">
-                        <img src="https://img.stadiumgoods.com/15/95/78/61/15957861_29809198_2048.jpg" />
+                        <img src="https://img.stadiumgoods.com/15/95/78/61/15957861_29809197_1000.jpg" />
                     </a>
                 </figure>
                 <figure className="sli-c">
                     <a href="/sneakers/27">
-                        <img src="https://img.stadiumgoods.com/16/81/96/45/16819645_34397436_2048.jpg" />
+                        <img src="https://img.stadiumgoods.com/16/88/32/71/16883271_34398003_1000.jpg"></img>
+                        
                     </a>
                 </figure>
                 <figure className="sli-c">
                     <a href="/sneakers/9">
-                        <img src="https://img.stadiumgoods.com/12/96/02/38/12960238_34435897_2048.jpg" />
+                        <img src="https://img.stadiumgoods.com/12/96/02/38/12960238_34435928_1000.jpg" />
                     </a>
                 </figure>
                 <figure className="sli-c">
                     <a href="/sneakers/6">
-                        <img src="https://img.stadiumgoods.com/jordan-kids-air-jordan-1-retro-high-og-bg-unc_13157688_34424154_2048.jpg" />
+                        <img src="https://img.stadiumgoods.com/13/15/76/82/13157682_34423411_1000.jpg" />
                     </a>
                 </figure>
                 <figure className="sli-c">
                     <a href="/sneakers/14">
-                        <img src="https://img.stadiumgoods.com/adidas-yeezy-yeezy-boost-700-utility-black_14244732_34498013_2048.jpg" />
+                        <img src="https://img.stadiumgoods.com/14/24/47/32/14244732_34497844_1000.jpg" />
                     </a>
                 </figure>
             </div>
