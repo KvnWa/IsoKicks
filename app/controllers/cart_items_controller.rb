@@ -9,11 +9,6 @@ class CartItemsController < ApplicationController
 
     end
 
-    def update
-        find_item.update!(cart_item_params)
-        render json: find_item, status: :ok
-      end
-
     def index
         cart_items = CartItem.all
         render json: cart_items

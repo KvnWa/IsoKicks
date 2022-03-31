@@ -1,29 +1,24 @@
-*{
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-}
-
-
 .navbar {
     height: 90px;
     top: 0;
     position: sticky;
-    display: flex; 
+    display: flex;
     width: 100%;
     background: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 14px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  height: 90px;
-  width: calc(100% - 180px);
-  margin: 0px auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  transition: all 600ms ease 0s;
-  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
-  text-decoration: none;
-   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    width: calc(100% - 180px);
+    margin: 0px auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: all 600ms ease 0s;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
+    text-decoration: none;
+
 }
 
 .navbar-logo {
@@ -32,7 +27,7 @@
 
 
 .leftside2 {
-    margin-left: 2.4rem; 
+    margin-left: 2.4rem;
 }
 
 .logo {
@@ -41,6 +36,5 @@
 
 .rightside1 {
     margin-right: 2.4rem;
- 
-}
 
+}

@@ -1,13 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useLocation } from 'react';
 import './Login.css'
 
-function Login({ username, setUsername, password, setPassword, handleLogInSubmit, signUpFirstName, setSignUpFirstName, signUpLastName, setSignUpLastName, signUpUsername, setSignUpUsername, signUpPassword, setSignUpPassword, signUpPasswordConfirmation, setSignUpPasswordConfirmation, handleSignUpSubmit, onLogin }) {
+function Login({ username, setUsername, password, setPassword, handleLogInSubmit, signUpFirstName, setSignUpFirstName, signUpLastName, setSignUpLastName, signUpUsername, setSignUpUsername, signUpPassword, setSignUpPassword, signUpPasswordConfirmation, setSignUpPasswordConfirmation, handleSignUpSubmit, signedIn }) {
 
     const [formType, setFormType] = useState(true)
 
     function onFormClick() {
         setFormType(formType => !formType)
     }
+
+
+
 
     
 

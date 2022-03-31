@@ -12,6 +12,12 @@ class UsersController < ApplicationController
         render json: @current_user 
     end
 
+    def update
+        @user.update(user_params)
+        render json: @user
+    end
+
+
     def destroy
         user = @user
         user.destroy

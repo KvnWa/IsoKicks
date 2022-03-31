@@ -98,6 +98,9 @@ const App = () => {
       // console.log(r)
       setSignedIn(true)
       setUser(r.data)
+      history.push('/')
+      window.location.reload();
+      
   
     })
     .catch(function (error) {
@@ -119,6 +122,7 @@ const App = () => {
       setSignedIn(false);
       setUser(null);
       history.push('/')
+      window.location.reload();
     })
   }
 
@@ -139,6 +143,7 @@ const App = () => {
     fetchData();
     console.log("click")
   }
+
 
   return (
     <>
