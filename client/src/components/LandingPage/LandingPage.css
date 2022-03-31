@@ -13,8 +13,8 @@
 
 .bottom-left {
    position: absolute;
-  bottom: 140px;
-  left: 156px;
+  bottom: 8em;
+  left: 10em;
   background-color: white;
   width: 450px;
   height: 350px;
