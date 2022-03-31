@@ -8,8 +8,6 @@ import axios from 'axios'
 
 const LandingPage = ({ sneakers }) => {
 
-
-
   return (
     <div className="splash-container">
       <div className="data-panel">

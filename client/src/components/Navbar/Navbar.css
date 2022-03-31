@@ -1,3 +1,7 @@
+*{
+    font-family: 'IBM Plex Sans Arabic';
+}
+
 .navbar {
     height: 90px;
     top: 0;

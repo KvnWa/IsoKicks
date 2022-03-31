@@ -5,6 +5,7 @@ import axios from 'axios';
 
 function ProfilePage({ signedIn, handleLogOut }) {
 
+
     return (
         <>
             <div className='profile-nav'>

@@ -1,9 +1,6 @@
 .slider-container {
-    padding-left: 100px;
-    padding-top: 100px;
+    padding-top: 10px;
     grid-column: 1 / -1;
-
-
 }
 
 
@@ -11,13 +8,16 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    /* height:  */
     overflow-x: scroll;
+}
+
+.sli-bottom {
+    justify-content: center;
+    text-align: center;
 }
 
 
 .sli-c {
- 
     height: 100%;
     width: auto;
     display: flex;
@@ -27,6 +27,7 @@
 }
 
 .sli-c img {
-    width: 300px;
-    height: 300px;
+    width: 25em;
+    height: auto;
+   
 }

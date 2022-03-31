@@ -56,6 +56,11 @@ const App = () => {
       setUser(null);
       history.push('/')
     })
+    .catch(function(error){
+      if (error.response){
+        console.log(error.response.data.errors)
+      }
+    })
   }
 
   function handleSignUpSubmit(e) {
@@ -148,7 +153,7 @@ const App = () => {
   return (
     <>
       <Router>
-        <Navbar />
+        <Navbar signedIn={signedIn} setSignedIn={setSignedIn}/>
         <Route exact path="/">
           <LandingPage sneakers={sneakers}/>
         </Route>
