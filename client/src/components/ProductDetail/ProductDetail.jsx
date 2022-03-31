@@ -6,7 +6,7 @@ function ProductDetail({user}) {
 
   const [sneaker, setSneaker] = useState(null);
   const [ selectSize, setSelectSize ] = useState(1);
-  const [ highlight, setHighlight ] = useState(false)
+  const [ highlight, setHighlight ] = useState(true)
   const { id } = useParams();
 
   useEffect(() => {
@@ -42,8 +42,6 @@ function ProductDetail({user}) {
 
    
   };
-
-
 
 
   const { brand, title, price, imageone, imagetwo, imagethree } = sneaker;

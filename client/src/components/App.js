@@ -33,7 +33,7 @@ const App = () => {
 
   // Signed In:
   const [signedIn, setSignedIn] = useState(false);
-  const [user,setUser] = useState(null)
+  const [user,setUser] = useState("")
 
   useEffect(()=>{
     // axios.get('/me').then(r=>{console.log(r)})
