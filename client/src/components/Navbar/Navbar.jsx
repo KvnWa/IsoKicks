@@ -18,8 +18,8 @@ const Navbar = ({signedIn}) => {
             <div className="navbar">
                     <Hamburger />
                 <span className="logo">
-                <Link to='/'>
-                <h1 className="navbar-logo">Iso Kicks</h1>
+                <Link to='/' className="navbar-logo">
+                <h1 >Iso Kicks</h1>
                 </Link>
                 </span>
                 <span className="rightside1">{signedIn? 
