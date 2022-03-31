@@ -4,6 +4,8 @@ import './Reset.css';
 
 function Reset({user}) {
 
+    console.log(user)
+
     const [ newName, setNewName ] = useState("")
 
     // function handleUsernameChange(e) {
@@ -14,7 +16,7 @@ function Reset({user}) {
     //   }
 
       const handleUsernameChange = (e) => {
-        e.prerventDefault();
+        e.preventDefault();
         fetch(`/users/${user.id}`, {
           method: 'PATCH',
           headers: {
@@ -24,6 +26,16 @@ function Reset({user}) {
             username: newName
           }),
         }).then((r) => r.json())
+        // .catch(function (error) {
+        //     if (error.response) {
+        //       console.log(error.response);
+        //       alert(error.response)
+        //     } else if (error.request) {
+        //       console.log(error.request);
+        //     } else {
+        //       console.log('Error', error.message);
+        //     }
+        //   });
 
     
        

@@ -8,18 +8,22 @@ class UsersController < ApplicationController
         render json: user, status: :created
     end
 
+    def index
+        render json: User.all
+    end
+
     def show
         render json: @current_user 
     end
 
     def update
-        @user.update(user_params)
-        render json: @user
+        @current_user.update!(user_params)
+        render json: current_user, status: :ok
     end
 
 
     def destroy
-        user = @user
+        user = @current_user
         user.destroy
         head :no_content
     end
@@ -28,6 +32,6 @@ class UsersController < ApplicationController
     private
     
     def user_params 
-        params.permit(:first_name, :last_name, :username, :password)
+        params.permit(:first_name, :last_name, :username, :password, :password_confirmation)
     end
 end

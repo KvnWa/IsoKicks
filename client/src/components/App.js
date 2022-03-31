@@ -137,13 +137,15 @@ const App = () => {
       const resp = await axios.get('/sneakers');
       setSneakers(resp.data);
     } catch(err) {
-      console.error(err)
+      console.error(err.response)
     }
   }
 
   useEffect(() => {
     fetchData();
   }, []);
+
+  
 
   const handleButtonClick = () => {
     fetchData();
