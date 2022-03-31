@@ -72,13 +72,26 @@ font-size: .9rem;
 }
 
 .oblock img {
-    width: 600px;
-    height: 500px;
-    object-fit: cover;
+    width: 686px;
+    height: 514px;
+    object-fit: contain;
 }
 
 .cat-desc {
     width: 600px;
+    
+}
+
+.red-text{
+    color: #a41d23;
+}
+
+.journal {
+    background-color: grey;
+    width: 500px;
+    position: relative;
+    margin: 0 auto;
+    align-items: center;
     
 }
 
