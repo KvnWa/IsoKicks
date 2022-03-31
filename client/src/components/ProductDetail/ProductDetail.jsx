@@ -52,11 +52,11 @@ function ProductDetail({user}) {
     <div className="product-details">
       <div className="img-container">
         <div className="big-product">
-          <img src={imageone} style={{ width: 1065 }}></img>
+          <img src={imageone}></img>
         </div>
         <div className="small-product">
-          <img src={imagetwo} style={{ width: 525 }}></img>
-          <img src={imagethree} style={{ width: 525 }}></img>
+          <img src={imagetwo}></img>
+          <img src={imagethree}></img>
         </div>
       </div>
       <div className="product-desc">

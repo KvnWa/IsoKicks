@@ -3,12 +3,13 @@
     padding: 25px 60px 25px 25px;
     margin-bottom: 75px;
     box-sizing: border-box;
+    width: 100vh;
 }
 
 
 
 .img-container {
-    width: 100px;
+    width: 10em;
 
 }
 
@@ -17,6 +18,14 @@
     grid-template-columns: auto auto;
     column-gap: 15px;
     padding-top: 10px;
+}
+
+.big-product img {
+    width: 67em;
+}
+
+.small-product img {
+    width: 33em;    
 }
 
 .product-desc {
@@ -33,6 +42,7 @@
     row-gap: 7px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    width: 100%;
 }
 
 .swatch-size-item {
@@ -41,12 +51,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 95%;
+    width: 100%;
     cursor: pointer;
     transition: border .2s ease;
     
 }
 
+.product-desc {
+    width: 90em;
+}
 .swatch-size-item-active {
     border: 5px solid #181818;
     height: 3.5em;
@@ -60,16 +73,17 @@
 }
 
 .add {
-    width: 25em;
+    width: 24em;
     height: 4em;
-    margin: 0 auto;
+    justify-content: center;
     border-radius: 10em;
     background-color: white;
+    position: relative;
+    text-align: center;
 }
 
 .btn-container {
-    padding-left: 60px;
-    padding-bottom: 20px;
+    padding-bottom: 1em;
 }
 
 .panel-toggle {
