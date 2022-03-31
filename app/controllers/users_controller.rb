@@ -18,10 +18,6 @@ class UsersController < ApplicationController
         head :no_content
     end
 
-    def update
-        @user.update_with_password(user_params)
-        ...
-      end
 
     private
     
