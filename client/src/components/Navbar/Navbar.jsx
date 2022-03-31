@@ -10,8 +10,7 @@ import Hamburger from '../Hamburger/Hamburger';
 
 const Navbar = () => {
     return (
-        <nav>
-            
+       
             <div className="navbar">
                     <Hamburger />
                 <span className="logo">
@@ -30,7 +29,6 @@ const Navbar = () => {
                     </Link>
                 </span>
             </div>
-        </nav>
     )
 }
 

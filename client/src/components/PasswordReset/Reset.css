@@ -1,0 +1,53 @@
+.reset-container{  
+    padding-top: 3em; 
+    text-align: center;
+}
+
+.reset-title {
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 1rem;
+
+}
+
+.reset-title h1 {   
+    padding-right: 12rem;   
+}
+
+.reset-form {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.reset-input {
+    width: 25em;
+    padding: 1.4rem 1.2rem;
+    color: #131313;
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: ProximaNova,sans-serif;
+    line-height: 1;
+    letter-spacing: 0.08rem;
+    background-color: #fff;
+    border: 0.1rem solid #c6c8ca;
+    border-radius: 0.2rem;
+    
+}
+
+.reset-btn {
+    width: 7rem;
+    background-color: #a41d23;
+    color: white;
+    line-height: 3;
+    border: none;
+    font-size: .9rem;
+    font-weight: 900;
+
+    
+}
+
+.div-between {
+    padding-top: 1rem;
+}

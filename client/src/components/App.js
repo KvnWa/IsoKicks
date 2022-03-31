@@ -198,7 +198,7 @@ const App = () => {
           <ProductDetail user={user} />
         </Route>
         <Route exact path="/reset">
-          <Reset/>
+          <Reset user={user}/>
         </Route>
       </Router>
       <Footer />
