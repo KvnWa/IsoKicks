@@ -44,6 +44,8 @@ function ProductDetail({user}) {
   };
 
 
+
+
   const { brand, title, price, imageone, imagetwo, imagethree } = sneaker;
 
   return (

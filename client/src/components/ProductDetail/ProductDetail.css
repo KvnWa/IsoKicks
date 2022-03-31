@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+
+
 .img-container {
     width: 100px;
 
@@ -35,7 +37,7 @@
 
 .swatch-size-item {
     border: 1px solid #e5e5e5;
-    height: 50px;
+    height: 3.5em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +49,7 @@
 
 .swatch-size-item-active {
     border: 5px solid #181818;
-    height: 50px;
+    height: 3.5em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,8 +60,11 @@
 }
 
 .add {
-    width: 300px;
+    width: 25em;
+    height: 4em;
     margin: 0 auto;
+    border-radius: 10em;
+    background-color: white;
 }
 
 .btn-container {
