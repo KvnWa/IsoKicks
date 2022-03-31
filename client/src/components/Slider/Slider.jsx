@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import ald from "../images/ald.jpeg"
+import mocha from "../images/mocha.jpeg"
 import './Slider.css'
 import axios from 'axios';
 
@@ -15,7 +16,7 @@ const Slider = ({sneakers}) => {
                     </img>
                 </figure>
                 <figure className="sli-c">
-                    <img src={ald}>
+                    <img src={mocha}>
                     </img>
                 </figure>
                 <figure className="sli-c">

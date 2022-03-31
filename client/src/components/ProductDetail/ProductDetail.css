@@ -45,6 +45,18 @@
     
 }
 
+.swatch-size-item-active {
+    border: 5px solid #181818;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    cursor: pointer;
+    transition: border .2s ease;
+    
+}
+
 .add {
     width: 300px;
     margin: 0 auto;

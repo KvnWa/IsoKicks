@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
     min-height: 100vh;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200&display=swap');
+
+body {
+    font-family: 'IBM Plex Sans Arabic';
 }

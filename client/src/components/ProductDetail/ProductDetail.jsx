@@ -6,6 +6,7 @@ function ProductDetail({user}) {
 
   const [sneaker, setSneaker] = useState(null);
   const [ selectSize, setSelectSize ] = useState(1);
+  const [ highlight, setHighlight ] = useState(false)
   const { id } = useParams();
 
   useEffect(() => {
@@ -20,6 +21,7 @@ function ProductDetail({user}) {
   function valueClick(e) {
     const size = (e.target.innerText)
     setSelectSize(size)
+    setHighlight(highlight => !highlight)
   
   }
 
@@ -35,7 +37,8 @@ function ProductDetail({user}) {
         user_id: user.id,
         size: selectSize
       }),
-    }).then((r) => r.json());
+    }).then((r) => r.json())
+    .then(setHighlight(highlight => !highlight));
 
    
   };
@@ -61,13 +64,13 @@ function ProductDetail({user}) {
           <span className="text-noerror">Select Size</span>
         </div>
         <div className="swatch-size">
-          <div className="swatch-size-item"  onClick={valueClick}>4</div>
+          <div className="swatch-size-item" onClick={valueClick}>4</div>
           <div className="swatch-size-item" onClick={valueClick}>5</div>
           <div className="swatch-size-item" onClick={valueClick}>6</div>
           <div className="swatch-size-item" onClick={valueClick}>7</div>
           <div className="swatch-size-item" onClick={valueClick}>8</div>
           <div className="swatch-size-item" onClick={valueClick}>9</div>
-          <div className="swatch-size-item" onClick={valueClick}>10</div>
+          <div className={highlight ? "swatch-size-item" : "swatch-size-item-active"}onClick={valueClick}>10</div>
           <div className="swatch-size-item" onClick={valueClick}>11</div>
           <div className="swatch-size-item" onClick={valueClick}>12</div>
           <div className="swatch-size-item" onClick={valueClick}>13</div>

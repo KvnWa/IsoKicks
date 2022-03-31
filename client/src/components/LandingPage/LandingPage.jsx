@@ -12,7 +12,19 @@ const LandingPage = ({sneakers}) => {
 
   return (
     <div className="splash-container">
-      <img src={ald} className="splash-image"></img>
+      <div className="data-panel">
+        <div className="bottom-left">
+          <div className="data-container">Nike</div>
+          <div className="data-title">
+            Sacai x Nike
+          </div>
+          <div className="data-desc">
+          Japan-based fashion house Sacai presents its avant-garde styling to create bold, layered versions of classic Nike models with a “doubled-up” effect. Find all of the sought-after Sacai x Nike collaborations here.
+          </div>
+          <button className="data-button">Shop Now</button>
+        </div>
+      <img src='https://www.stadiumgoods.com/BWStaticContent/54000/a31867eb-ef82-4774-9a03-1a257788969b_220328-dd1875-001-desktop-1.jpg' className="splash-image"></img>
+      </div>
       <div className="tblock">
         <div className="oblock">
           <img src={mocha}></img>
