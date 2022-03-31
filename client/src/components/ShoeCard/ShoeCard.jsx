@@ -9,7 +9,7 @@ const ShoeCard = ({ sneaker, handleButtonClick }) => {
 
   return (
       <div className="shoecontainer">
-          <Link to={`/sneakers/${id}`}>
+          <Link style={{textDecoration: "none"}} to={`/sneakers/${id}`}>
     <div className="shoecard" onClick={handleButtonClick} >
         <img src={imageone} style={{width: "275px"}}/>
         <h3>{title}</h3>

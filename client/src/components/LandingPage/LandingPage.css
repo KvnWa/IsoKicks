@@ -1,10 +1,10 @@
-
 .splash-container {
     padding-top: 10px;
     margin: 0 auto;
     width: 100%;
     position: relative;
-    
+    z-index: -1;
+
 }
 
 .data-panel {
@@ -12,13 +12,13 @@
 }
 
 .bottom-left {
-   position: absolute;
-  bottom: 8em;
-  left: 10em;
-  background-color: white;
-  width: 450px;
-  height: 350px;
-  padding: 45px 35px 35px 35px;
+    position: absolute;
+    bottom: 8em;
+    left: 10em;
+    background-color: white;
+    width: 30em;
+    height: 20em;
+    padding: 45px 35px 35px 35px;
 }
 
 .data-container {
@@ -32,10 +32,10 @@
 }
 
 .data-desc {
-    padding-top: 10px;
-    padding-bottom: 30px;
-line-height: 24px;
-font-size: .9rem;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    line-height: 24px;
+    font-size: .9rem;
 }
 
 .data-button {
@@ -62,7 +62,7 @@ font-size: .9rem;
     object-position: center center;
 }
 
-.tblock  {
+.tblock {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
@@ -79,12 +79,12 @@ font-size: .9rem;
 
 .cat-desc {
     width: 600px;
-    
+
 }
 
-.red-text{
+.red-text {
     color: #a41d23;
-    
+
 }
 
 .red-text-1 {
@@ -101,11 +101,9 @@ font-size: .9rem;
     bottom: 60px;
     overflow-wrap: break-word;
     padding: 10px 10px;
-  
+
 }
 
 .journal p {
     line-height: 24px;
 }
-
-

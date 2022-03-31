@@ -1,9 +1,12 @@
+
+
 .shoecontainer {
     grid-template-columns: repeat(5,1fr);
     column-gap: 14px;
     font-size: 12px;
     display: grid;
     grid-auto-rows: auto;
+    text-decoration: none;
   
 
 }
@@ -14,9 +17,12 @@
     border-radius: 10px;
     justify-content: center;
     margin: 0 auto;
+    text-decoration: none;
+   
 }
 
 .shoecard img {
     object-fit: contain;
     
 }
+
