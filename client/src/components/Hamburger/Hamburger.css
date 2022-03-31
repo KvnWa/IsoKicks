@@ -4,7 +4,7 @@
    display: block;
    position: relative;
    
-   z-index: 1000;
+   z-index: 1;
    
    -webkit-user-select: none;
    user-select: none;

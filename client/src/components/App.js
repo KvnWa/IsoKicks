@@ -10,6 +10,7 @@ import Product from './Product/Product.jsx'
 import LandingPage from './LandingPage/LandingPage.jsx'
 import ProductDetail from './ProductDetail/ProductDetail.jsx'
 import ProfilePage from './ProfilePage/ProfilePage'
+import Reset from './PasswordReset/Reset.jsx'
 import axios from 'axios'
 
 
@@ -195,6 +196,9 @@ const App = () => {
         </Route>
         <Route exact path="/sneakers/:id">
           <ProductDetail user={user} />
+        </Route>
+        <Route exact path="/reset">
+          <Reset/>
         </Route>
       </Router>
       <Footer />
