@@ -7,6 +7,9 @@ import fav from '../images/fav.svg'
 import search from '../images/search.svg'
 import user from '../images/user.svg'
 import Hamburger from '../Hamburger/Hamburger';
+import kicks from '../images/kicks.png'
+import left from "../images/left.svg"
+
 import ProfilePage from '../ProfilePage/ProfilePage.jsx';
 
 const Navbar = ({ signedIn }) => {
@@ -17,18 +20,19 @@ const Navbar = ({ signedIn }) => {
         <div>
             <div className="top-bar">
                 <div className="mover-container">
-                    <div className="mover-1">Shop Top Picks!</div>
+                    <a href="/product" style={{color: "white"}}><div className="mover-1">Shop Top Picks!</div></a>
                 </div>
             </div>
             <div className="navbar">
+                
                 <Hamburger />
-                <span className="logo">
-                    <div>
-                        <Link to='/' className="navbar-logo">
-                            <h1 >Iso Kicks</h1>
-                        </Link>
-                    </div>
-                </span>
+                <div className="logo"><a href="/" style={{textDecoration: "none", fontSize: "2em", fontWeight: "bolder", color: "#181818"}}>Iso Kicks</a>
+                    
+                        {/* <Link to='/' className="navbar-logo">
+                            <h1 className="iso-k">Iso Kicks</h1>
+                        </Link> */}
+                  
+                </div>
                 <span className="rightside1">{signedIn ?
                     <Link to="/profile">
                         <img src={user}></img>

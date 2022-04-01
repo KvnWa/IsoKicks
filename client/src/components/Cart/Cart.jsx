@@ -35,6 +35,7 @@ const Cart = () => {
   function deleteForever(id) {
     const deleted = cartObj.filter(cart => { return cart.id !== id })
     setCartObj(deleted)
+    window.location.reload();
   }
 
   // if(filterUser.length === 0) {

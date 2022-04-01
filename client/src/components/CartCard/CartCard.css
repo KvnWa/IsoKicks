@@ -4,5 +4,41 @@
 
 .single-item {
     display:grid;
+    width: 30em;
+    height: 10em;
+    position: relative;
+
 }
 
+
+.size-cont {
+    display: flex;
+    width: 100px;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    margin-top: 3em;
+    
+  
+}
+
+
+.remove-a {
+    display: flex;
+}
+
+
+.exit {
+    width: 1px;
+}
+.cart {
+    width: 35em;
+}
+
+
+.bbb {
+    display: flex;
+    object-fit: contain;
+    width: 10px;
+    justify-content: space-between;
+}

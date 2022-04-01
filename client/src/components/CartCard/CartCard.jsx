@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react'
 import './CartCard.css'
+import exit from '../images/exit.svg'
+import edit from '../images/edit.svg'
+import fav from '../images/fav.svg'
+
 
 const CartCard = ({ cart, id, deleteForever }) => {
 
@@ -18,18 +22,29 @@ const CartCard = ({ cart, id, deleteForever }) => {
                 <div className="cart-left">
                     <div className="cart-left-i">
                         <img src={cart.sneaker.imagefour} className="cart-img"></img>
-                        <div className="single-item">
-                        <p>{cart.sneaker.title}</p>
-                        <p>${cart.sneaker.price}</p>
-                        <p>Size {cart.size}</p>
+                        <div className="ccc">
+                            <div className="single-item">
+                                <h5 className="s5">{cart.sneaker.title} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${cart.sneaker.price}</h5>
+                                <div className="size-cont" >
+                                    <h6>Size {cart.size} </h6>
+                                    <div onClick={handleRemoveClick} style={{ cursor: "pointer" }} className="remove-a">
+                                            <img src={exit} alt="asd" className="exit" ></img>
+                                            <h6>Remove</h6>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="cart-left-d">
                     </div>
                 </div>
-                <button onClick={handleRemoveClick} className="remove-cart"></button>
+
             </div>
+
+
         </div>
+
+
     )
 }
 

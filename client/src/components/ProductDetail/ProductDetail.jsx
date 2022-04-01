@@ -7,6 +7,7 @@ function ProductDetail({user}) {
   const [sneaker, setSneaker] = useState(null);
   const [ selectSize, setSelectSize ] = useState(1);
   const [ highlight, setHighlight ] = useState(true)
+  const [ highlight2, setHighlight2 ] = useState(true)
   const { id } = useParams();
 
   useEffect(() => {
@@ -25,6 +26,13 @@ function ProductDetail({user}) {
   
   }
 
+  function valueClick2(e) {
+    const size = (e.target.innerText)
+    setSelectSize(size)
+    setHighlight2(highlight2 => !highlight2)
+  
+  }
+
   const handleAddClick = () => {
     console.log(user)
     fetch('/cart_items', {
@@ -38,7 +46,7 @@ function ProductDetail({user}) {
         size: selectSize
       }),
     }).then((r) => r.json())
-    .then(setHighlight(highlight => !highlight));
+    // .then(setHighlight(highlight => !highlight));
 
    
   };
@@ -72,7 +80,7 @@ function ProductDetail({user}) {
           <div className="swatch-size-item" onClick={valueClick}>9</div>
           <div className={highlight ? "swatch-size-item" : "swatch-size-item-active"}onClick={valueClick}>10</div>
           <div className="swatch-size-item" onClick={valueClick}>11</div>
-          <div className="swatch-size-item" onClick={valueClick}>12</div>
+          <div className={highlight2 ? "swatch-size-item" : "swatch-size-item-active2"} onClick={valueClick2}>12</div>
           <div className="swatch-size-item" onClick={valueClick}>13</div>
           <div className="swatch-size-item" onClick={valueClick}>14</div>
           <div className="swatch-size-item" onClick={valueClick}>15</div>
