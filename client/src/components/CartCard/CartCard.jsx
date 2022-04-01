@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import './CartCard.css'
 
 const CartCard = ({ cart, id, deleteForever }) => {
 
@@ -16,15 +17,17 @@ const CartCard = ({ cart, id, deleteForever }) => {
             <div className="cart-body">
                 <div className="cart-left">
                     <div className="cart-left-i">
-                        <img src={cart.sneaker.imagefour}></img>
+                        <img src={cart.sneaker.imagefour} className="cart-img"></img>
+                        <div className="single-item">
                         <p>{cart.sneaker.title}</p>
                         <p>${cart.sneaker.price}</p>
                         <p>Size {cart.size}</p>
+                        </div>
                     </div>
                     <div className="cart-left-d">
                     </div>
                 </div>
-                <button onClick={handleRemoveClick}></button>
+                <button onClick={handleRemoveClick} className="remove-cart"></button>
             </div>
         </div>
     )

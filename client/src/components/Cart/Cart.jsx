@@ -6,22 +6,22 @@ import { data } from 'autoprefixer';
 
 const Cart = () => {
 
-const [ cartObj, setCartObj ] = useState([])
-const [userId, setUserId] = useState(null)
-const [totalPrice, setTotalPrice] = useState("")
+  const [cartObj, setCartObj] = useState([])
+  const [userId, setUserId] = useState(null)
+  const [totalPrice, setTotalPrice] = useState("")
 
 
- const fetchData = () => {
-    fetch( `/cart_items`)
-    .then((r) => r.json())
-    .then((data) => {
-      setCartObj(data)
-    })
+  const fetchData = () => {
+    fetch(`/cart_items`)
+      .then((r) => r.json())
+      .then((data) => {
+        setCartObj(data)
+      })
   };
 
-useEffect(() => {
+  useEffect(() => {
     fetchData();
-      fetch("/me")
+    fetch("/me")
       .then(resp => resp.json())
       .then(data => {
         setUserId(data.id)
@@ -33,7 +33,7 @@ useEffect(() => {
   console.log(filterUser);
 
   function deleteForever(id) {
-    const deleted = cartObj.filter(cart => { return cart.id !== id})
+    const deleted = cartObj.filter(cart => { return cart.id !== id })
     setCartObj(deleted)
   }
 
@@ -45,32 +45,34 @@ useEffect(() => {
   // }
 
 
-
-
   return (
-    <div className="shoecontainer">
+    <>
       <h2 className="cart-header">Shopping Cart</h2>
-      {filterUser.map((cart) => (
-        <CartCard
-          key={cart.id}
-          id={cart.id}
-          cart={cart}
-          deleteForever={deleteForever}
+      <div className="shoecontainer5">
+        <div className="cart-map">
+        {filterUser.map((cart) => (
+          <CartCard
+            key={cart.id}
+            id={cart.id}
+            cart={cart}
+            deleteForever={deleteForever}
           />
-      ))}
-      <div className="cart-right">
+        ))}
+        </div>
+        <div className="cart-right">
           <div className="cart-right-d">
-            <div>Order Summary</div>
+            <h3>Order Summary</h3>
             <div>Subtotal: ${totalPrice}</div>
             <div>Estimated Shipping: FREE</div>
             <div>TOTAL: ${totalPrice}</div>
           </div>
           <div className="checkout-container">
-          <span>4 interest-free payments with <strong>Klarna</strong></span>
-          <button>CHECKOUT</button>
+            <span className="span4">4 interest-free payments with <strong>Klarna</strong></span>
+            <button className="checkout-btn">CHECKOUT</button>
           </div>
         </div>
-    </div>
+      </div>
+    </>
   )
 }
 

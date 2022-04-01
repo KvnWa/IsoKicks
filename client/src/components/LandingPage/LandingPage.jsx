@@ -10,6 +10,19 @@ const LandingPage = ({ sneakers }) => {
 
   return (
     <div className="splash-container">
+      <div className="grey-bar">
+        <ul className="grey-items">
+          <li>JORDAN</li>
+          <li>NIKE</li>
+          <li>YEEZY</li>
+          <li>ADIDAS</li>
+          <li>WOMEN</li>
+          <li>APPAREL</li>
+          <li>ALL BRANDS</li>
+          <li>SHOP BY</li>
+          
+        </ul>
+      </div>
       <div className="data-panel">
         <div className="bottom-left">
           <div className="data-container">Nike</div>

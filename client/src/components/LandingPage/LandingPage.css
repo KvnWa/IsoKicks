@@ -1,5 +1,4 @@
 .splash-container {
-    padding-top: 10px;
     margin: 0 auto;
     width: 100%;
     position: relative;
@@ -58,13 +57,14 @@
     display: inline-flex;
     object-fit: contain;
     object-position: center center;
+    position: relative;
 }
 
 .tblock {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 50px; 
     grid-gap: 50px;
 
 }
@@ -104,4 +104,27 @@
 
 .journal p {
     line-height: 24px;
+}
+
+.grey-bar {
+    background-color: #efefef;
+    display:flex;
+    justify-content: center;
+    position: relative;
+    max-height: 2.8rem;
+
+}
+
+.grey-items  {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.grey-items li {
+    display:flex;
+    justify-content: left;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
