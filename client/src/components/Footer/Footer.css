@@ -28,6 +28,8 @@ html {
   }
 
   .footer {
+    display: flex;
+    justify-content: center;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -36,3 +38,5 @@ html {
     background-color: #efefef;
     text-align: center;
   }
+
+ 
