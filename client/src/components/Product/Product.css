@@ -1,24 +1,140 @@
 .shoecontainer {
-    grid-template-columns: repeat(5,1fr);
-    column-gap: 14px;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 2em;
     font-size: 12px;
     display: grid;
     grid-auto-rows: auto;
     text-decoration: none;
-
-}
-
-.shoecard {
-    border: .5px gainsboro solid;
-    width: 100%;
-    border-radius: 10px;
-    justify-content: center;
-    margin: 0 auto;
-    text-decoration: none;
-    color: black;
-}
-
-.shoecard img {
-    object-fit: contain;
     
+}
+
+    .shoeco {
+    align-items: center;
+    padding-top: 2em;
+    padding-left: 5em;
+    }
+
+    .shoecard {
+        border: .5px gainsboro solid;
+        width: 100%;
+        border-radius: 10px;
+        justify-content: center;
+        margin: 0 auto;
+        text-decoration: none;
+        color: black;
+    }
+
+    .shoecard img {
+        object-fit: contain;
+        
+    }
+
+.product-top {
+    max-width: 1600px;
+    padding-left: 30em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    
+}
+
+.product-top img {
+    object-fit: contain;
+    max-width: 65em;
+    position: relative;
+}
+
+.cat-desc1 {
+    max-width: 300px;
+    
+
+}
+
+.ptop {
+    display: grid;
+}
+
+.phead {
+    display: flex;
+    border: 1px solid #efefef;
+    font-size: 1.1rem;
+}
+
+.pbody {
+    bottom: 12em;
+    position: relative;
+}
+
+
+.red-text {
+    color: #a41d23;
+
+}
+
+.red-text-1 {
+    color: #a41d23;
+    text-decoration: underline;
+}
+
+.journal1 {
+    padding-left: 6rem;
+    background-color: white;
+    width: 600px;
+    position: relative;
+    margin: 0 auto;
+    align-items: center;
+    bottom: 19rem;
+    right: 40rem;
+    overflow-wrap: break-word;
+    /* padding: 10px 10px; */
+    justify-content: center;
+
+}
+
+.journal1 p {
+    line-height: 24px;
+}
+
+.p1 {
+    width: 15rem;
+    justify-content: center;
+    border-right: 1px solid #efefef;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    padding-top: .5rem;
+}
+
+.p2 {
+    width: 80rem;
+    border-right: 1px solid #efefef;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding-top: .5rem;
+}
+
+.p3 {
+    width: 15rem;
+    padding-left: .25rem;
+    font-size: .8rem;
+}
+
+.p4{
+    padding-left: .5rem;
+}
+
+.select-m {
+    border: 0px;
+    font-size: 1rem; 
+}
+
+.body-cont {
+    display: flex;
+}
+
+.left-body {
+    width: 63.55em;
+    background-color: #efefef;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2em;
 }

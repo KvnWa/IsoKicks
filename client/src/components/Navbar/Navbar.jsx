@@ -9,20 +9,27 @@ import user from '../images/user.svg'
 import Hamburger from '../Hamburger/Hamburger';
 import ProfilePage from '../ProfilePage/ProfilePage.jsx';
 
-const Navbar = ({signedIn}) => {
+const Navbar = ({ signedIn }) => {
 
 
     console.log(signedIn)
     return (
-       
+        <div>
+            <div className="top-bar">
+                <div className="mover-container">
+                    <div className="mover-1">Shop Top Picks!</div>
+                </div>
+            </div>
             <div className="navbar">
-                    <Hamburger />
+                <Hamburger />
                 <span className="logo">
-                <Link to='/' className="navbar-logo">
-                <h1 >Iso Kicks</h1>
-                </Link>
+                    <div>
+                        <Link to='/' className="navbar-logo">
+                            <h1 >Iso Kicks</h1>
+                        </Link>
+                    </div>
                 </span>
-                <span className="rightside1">{signedIn? 
+                <span className="rightside1">{signedIn ?
                     <Link to="/profile">
                         <img src={user}></img>
                     </Link> : <Link to="/login"> <img src={user}></img></Link>}
@@ -33,6 +40,7 @@ const Navbar = ({signedIn}) => {
                     </Link>
                 </span>
             </div>
+        </div>
     )
 }
 
