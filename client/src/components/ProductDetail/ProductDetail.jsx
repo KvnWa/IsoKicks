@@ -46,6 +46,8 @@ function ProductDetail({user}) {
         size: selectSize
       }),
     }).then((r) => r.json())
+    .then(alert("Added to Cart"))
+    
     // .then(setHighlight(highlight => !highlight));
 
    

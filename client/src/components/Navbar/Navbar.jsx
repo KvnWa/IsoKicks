@@ -9,6 +9,7 @@ import user from '../images/user.svg'
 import Hamburger from '../Hamburger/Hamburger';
 import kicks from '../images/kicks.png'
 import left from "../images/left.svg"
+import isok from '../images/isologo.png'
 
 import ProfilePage from '../ProfilePage/ProfilePage.jsx';
 
@@ -26,7 +27,7 @@ const Navbar = ({ signedIn }) => {
             <div className="navbar">
                 
                 <Hamburger />
-                <div className="logo"><a href="/" style={{textDecoration: "none", fontSize: "2em", fontWeight: "bolder", color: "#181818"}}>Iso Kicks</a>
+                <div className="logo"><a href="/" style={{textDecoration: "none", fontSize: "2em", fontWeight: "bolder", color: "#181818"}}><img src={isok}/></a>
                     
                         {/* <Link to='/' className="navbar-logo">
                             <h1 className="iso-k">Iso Kicks</h1>
