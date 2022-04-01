@@ -3,6 +3,13 @@ import axios from 'axios';
 import CartCard from '../CartCard/CartCard.jsx';
 import './Cart.css';
 import { data } from 'autoprefixer';
+import amex from '../images/amex.svg';
+import paypal from '../images/paypal.svg';
+import klarna from '../images/klarna.svg';
+import union from '../images/union.svg';
+import mastercard from '../images/mastercard.svg';
+import visa from '../images/visa.svg';
+
 
 const Cart = () => {
 
@@ -70,6 +77,14 @@ const Cart = () => {
           <div className="checkout-container">
             <span className="span4">4 interest-free payments with <strong>Klarna</strong></span>
             <button className="checkout-btn">CHECKOUT</button>
+            <div className="payment">
+              <img src={visa}></img>
+              <img src={mastercard}></img>
+              <img src={klarna}></img>
+              <img src={union}></img>
+              <img src={amex}></img>
+              <img src={paypal}></img>
+            </div>
           </div>
         </div>
       </div>

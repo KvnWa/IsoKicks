@@ -26,10 +26,10 @@ const CartCard = ({ cart, id, deleteForever }) => {
                             <div className="single-item">
                                 <h5 className="s5">{cart.sneaker.title} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ${cart.sneaker.price}</h5>
                                 <div className="size-cont" >
-                                    <h6>Size {cart.size} </h6>
+                                    <h6>Size {cart.size}&nbsp;&nbsp;&nbsp; </h6>
                                     <div onClick={handleRemoveClick} style={{ cursor: "pointer" }} className="remove-a">
-                                            <img src={exit} alt="asd" className="exit" ></img>
-                                            <h6>Remove</h6>
+                                            <img src={exit} alt="asd" className="exit" style={{width: "10px"}}></img>
+                                            <h6>&nbsp;&nbsp;Remove</h6>
                                     </div>
                                 </div>
                             </div>

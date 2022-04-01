@@ -18,6 +18,12 @@ const Hamburger = () => {
                     <a href="#"><li>Mens</li></a>
                     <a href="#"><li>Womens</li></a>
                     <a href="#"><li>Kids</li></a>
+                    <a href="product"><li>Apparel</li></a>
+                    <a href="#"><li>Jordan</li></a>
+                    <a href="#"><li style={{color: "#a41d23"}}>Sale</li></a>
+          
+                    
+                
                 </ul>
             </div>
         </nav>

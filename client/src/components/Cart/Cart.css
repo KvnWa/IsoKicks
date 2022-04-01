@@ -75,6 +75,16 @@
     text-align: center;
 }
 
+.payment {
+    margin-left: 12px;
+}
+
+.payment img{
+    padding-top: 1em;
+    align-items: center;
+   padding-right: 2em;
+}
+
 .checkout-btn {
     background-color: rgb(164, 29, 35);
     border: none;

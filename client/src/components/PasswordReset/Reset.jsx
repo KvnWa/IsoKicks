@@ -28,6 +28,7 @@ function Reset({ user }) {
                 password: newPassword
             }),
         }).then((r) => r.json())
+        window.location.reload();
         // .catch(function (error) {
         //     if (error.response) {
         //       console.log(error.response);
@@ -50,7 +51,7 @@ function Reset({ user }) {
                 <form className="reset-form">
                     <input className="reset-input" type="text" placeholder='Enter New Username' required={true} onChange={(e) => { setNewName(e.target.value) }}></input>
                     <div className="div-between"></div>
-                    <input className="reset-input" type="text" placeholder='Enter New Password' required={true} onChange={(e) => { setNewPassword(e.target.value) }}></input>
+                    <input className="reset-input" type="password" placeholder='Enter New Password' required={true} onChange={(e) => { setNewPassword(e.target.value) }}></input>
                     <div className="div-between"></div>
                     <button onClick={handleUsernameChange} className="reset-btn">Update</button>
                 </form>
