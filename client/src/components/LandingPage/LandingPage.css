@@ -17,6 +17,7 @@
     width: 30em;
     height: 20em;
     padding: 45px 35px 35px 35px;
+    z-index: 0;
 }
 
 .data-container {
@@ -58,6 +59,7 @@
     object-fit: contain;
     object-position: center center;
     position: relative;
+    z-index: -1
 }
 
 .tblock {
