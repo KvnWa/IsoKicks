@@ -31,3 +31,10 @@
     height: auto;
    
 }
+
+
+@media only screen and (max-width: 1600px) {
+    .slider-container {
+        width: 1600px;
+    }
+}
