@@ -40,3 +40,5 @@ sneaker30 = Sneaker.create(brand: "New Balance", title: "920 MTA - NYC Subway", 
 
 cart1 = CartItem.create(user_id: demo.id, sneaker_id: sneaker1.id, size: 12)
 puts "done seeding"
+
+

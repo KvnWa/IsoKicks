@@ -77,6 +77,7 @@ const App = () => {
       .then(r=>{
           console.log(r)
           setSignedIn(true)
+          alert("Account Successfully Created")
         })
       .catch(function (error) {
         if (error.response) {

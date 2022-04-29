@@ -4,11 +4,13 @@ import ald from '../images/ald.jpeg'
 import './LandingPage.css'
 import Slider from '../Slider/Slider'
 import axios from 'axios'
+import Container from 'bootstrap';
 
 
 const LandingPage = ({ sneakers }) => {
 
   return (
+    <div className="img-fluid">
     <div className="splash-container">
       <div className="grey-bar">
         <ul className="grey-items">
@@ -59,6 +61,8 @@ const LandingPage = ({ sneakers }) => {
       </div>
       <Slider sneakers={sneakers} />
     </div>
+    </div>
+   
   )
 }
 

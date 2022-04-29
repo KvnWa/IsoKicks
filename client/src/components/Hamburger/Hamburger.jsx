@@ -12,15 +12,15 @@ const Hamburger = () => {
                 <span></span>
                 <ul id="menu">
                     <a href="product"><li>Shop All</li></a>
-                    <a href="#"><li>Nike</li></a>
-                    <a href="#"><li>Adidas</li></a>
-                    <a href="#"><li>New Balance</li></a>
-                    <a href="#"><li>Mens</li></a>
-                    <a href="#"><li>Womens</li></a>
-                    <a href="#"><li>Kids</li></a>
+                    <a href="product"><li>Nike</li></a>
+                    <a href="product"><li>Adidas</li></a>
+                    <a href="product"><li>New Balance</li></a>
+                    <a href="product"><li>Mens</li></a>
+                    <a href="product"><li>Womens</li></a>
+                    <a href="product"><li>Kids</li></a>
                     <a href="product"><li>Apparel</li></a>
-                    <a href="#"><li>Jordan</li></a>
-                    <a href="#"><li style={{color: "#a41d23"}}>Sale</li></a>
+                    <a href="product"><li>Jordan</li></a>
+                    <a href="product"><li style={{color: "#a41d23"}}>Sale</li></a>
           
                     
                 

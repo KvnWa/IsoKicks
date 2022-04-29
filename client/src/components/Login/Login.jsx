@@ -11,9 +11,6 @@ function Login({ username, setUsername, password, setPassword, handleLogInSubmit
 
 
 
-
-    
-
     return (
         <div className="sign-container">
         <div className='signin'>

@@ -45,13 +45,7 @@ const Cart = () => {
     window.location.reload();
   }
 
-  // if(filterUser.length === 0) {
-  //   return null
-  // } else {
-  //   const sumUserPrice = filterUser.reduce((a, b) => a.sneaker.price + b.sneaker.price, 0)
-  //   console.log(sumUserPrice)
-  // }
-
+  
 
   return (
     <>
