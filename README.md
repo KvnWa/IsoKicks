@@ -4,7 +4,7 @@ This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
-https://watch.screencastify.com/v/4LTGujp2MwkYO9DYAu0K
+<img src="client/demo/test.gif" width="500">
 
 * Ruby version
 
