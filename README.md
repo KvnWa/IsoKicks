@@ -11,7 +11,9 @@ Full Stack E-commerce website
 ## Description
 
 -User authentication, create an account and login
+<br>
 -Add and remove items from a user's cart
+<br>
 -Edit username and password
 
 <img src="client/demo/isokicks1.gif" width="500">
