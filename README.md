@@ -7,6 +7,7 @@ Simple overview of use/purpose.
 An in-depth paragraph about your project and overview of use.
 
 <img src="client/demo/isokicks1.gif" width="500">
+<img src="client/demo/isokicks2.gif" width="500">
 
 ## Getting Started
 
