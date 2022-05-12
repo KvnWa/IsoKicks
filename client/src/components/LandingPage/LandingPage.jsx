@@ -34,7 +34,7 @@ const LandingPage = ({ sneakers }) => {
           <div className="data-desc">
             Japan-based fashion house Sacai presents its avant-garde styling to create bold, layered versions of classic Nike models with a “doubled-up” effect. Find all of the sought-after Sacai x Nike collaborations here.
           </div>
-          <button className="data-button">Shop Now</button>
+          <button className="data-button"><a href="product" style={{color: "#a41d23"}}>Shop Now</a></button>
         </div>
         <img src='https://www.stadiumgoods.com/BWStaticContent/54000/a31867eb-ef82-4774-9a03-1a257788969b_220328-dd1875-001-desktop-1.jpg' className="splash-image"></img>
       </div>

@@ -100,11 +100,26 @@
     }
   }
 
-  @media only screen and (max-width: 1800px) {
+  @media only screen and (max-width: 800px) {
       .splash-container {
-          width: 100%;
+          width: 1300px;
       }
   }
+  @media only screen and (max-width: 800px) {
+    .top-bar {
+        width: 1300px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .navbar {
+        width: 1300px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .footer {
+        width: 1300px;
+    }
+}
 
     
 .cat-desc {
@@ -160,3 +175,5 @@
     padding-left: 4rem;
     padding-right: 4rem;
 }
+
+

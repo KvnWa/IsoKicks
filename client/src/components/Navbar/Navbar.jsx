@@ -24,9 +24,10 @@ const Navbar = ({ signedIn }) => {
                     <a href="/product" style={{color: "white"}}><div className="mover-1">Shop Top Picks!</div></a>
                 </div>
             </div>
+            
             <div className="navbar">
                 
-                <Hamburger />
+            <Hamburger /> 
                 <div className="logo"><a href="/" style={{textDecoration: "none", fontSize: "2em", fontWeight: "bolder", color: "#181818"}}><img src={isok}/></a>
                     
                         {/* <Link to='/' className="navbar-logo">

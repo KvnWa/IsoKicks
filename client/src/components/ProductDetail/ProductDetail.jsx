@@ -34,7 +34,7 @@ function ProductDetail({user}) {
   }
 
   const handleAddClick = () => {
-    if(user == true){
+
     fetch('/cart_items', {
       method: 'POST',
       headers: {
@@ -47,9 +47,7 @@ function ProductDetail({user}) {
       }),
     }).then((r) => r.json())
     .then(alert("Added to Cart"))
-  }else {
-    alert("Please login first")
-  }
+ 
       
     // .then(setHighlight(highlight => !highlight));
    
