@@ -2,7 +2,8 @@
 
 Full Stack E-commerce website
 
-#LIVE
+#Live Demo
+<br>
 http://isokicks.herokuapp.com/
 
 ## Languages/technologies
